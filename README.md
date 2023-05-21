@@ -13,16 +13,20 @@ The server will start at the port `9000`. Available at this URL `http://localhos
 
 ## Endpoints
 
-+ `GET /employees`: get all the employees
++ **GET /employees**: get all the employees
 
-example: ``` [
-    {
+example:
+
+    
+   
+    [{
         "id": 1,
         "firstName": "Laurent",
         "lastName": "GINA",
         "mail": "laurentgina@mail.com",
         "password": "laurent"
     },
+    
     {
         "id": 2,
         "firstName": "Sophie",
@@ -30,6 +34,7 @@ example: ``` [
         "mail": "sophiefoncek@mail.com",
         "password": "sophie"
     },
+    
     {
         "id": 3,
         "firstName": "Agathe",
@@ -37,45 +42,47 @@ example: ``` [
         "mail": "agathefeeling@mail.com",
         "password": "agathe"
     },
+    
     {
         "id": 4,
         "firstName": "Morice",
         "lastName": "Tagne",
         "mail": "tagne@gmail.com",
         "password": "TM-Cut@e03"
-    }
-] ```
+    }]
+    
 
-+ `GET /employee/{id}`: get an employee with the id `{id}`
 
-example: ```{
++ **GET /employee/{id}**: get an employee with the id `{id}`
+
+example: `{
     "id": 3,
     "firstName": "Agathe",
     "lastName": "FEELING",
     "mail": "agathefeeling@mail.com",
     "password": "agathe"
-}```
+}`
 
-+ `POST /employee`: create an employee
++ **POST /employee**: create an employee
 
-example: ```{
+example: `{
     "id": 6,
     "firstName": "Mounir",
     "lastName": "TOUNDJI",
     "mail": "mtoun@gmail.com",
     "password": "mM-23!WER"
-}```
+}`
 
-+ `PUT /employee/{id}`: modify an employee informations with the id `{id}`
++ **PUT /employee/{id}**: modify an employee informations with the id `{id}`
 
-example: ```{
+example: `{
     "id": 4,
     "firstName": "Morice",
     "lastName": "Tagne",
     "mail": "tagne@gmail.com",
     "password": "mM-23!23455"
-}```
+}`
 
-+ `DELETE /employee/{id}`: delete an employee with the id `{id}`
++ **DELETE /employee/{id}**: delete an employee with the id `{id}`
 
 
